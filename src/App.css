@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@300&family=Roboto+Slab:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lato:wght@300&family=Noto+Serif&family=Roboto+Slab:wght@300&family=Sail&family=Ubuntu&display=swap');
+
+/*font-family: 'Cookie', cursive;
+font-family: 'Heebo', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sail', cursive;
+font-family: 'Ubuntu', sans-serif; */
+body {
+    /* background:  radial-gradient(circle, rgb(26, 182, 243), SkyBlue 50%, LightCyan 50%, SkyBlue); */
+    background: #ffff78;    
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 60px;
+    margin-left: 20%;
+     margin-bottom: 5px;
+    margin-top: 5px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputAndClear {
+    display: flex;
+    flex: row;
+    align-items: center;
+    /* margin-bottom: 2vh; */
+    margin-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.removeAllButton {
+    border-radius: 1px;
+    margin-left: 1em;
+    height: 5vh;
+    border: black solid 2px;
+    background-color:red;
+    font-size: medium;
+}
+.addButton{
+    border-radius: 1px;
+    margin-left: 1em;
+    height: 5vh;
+    border: black solid 2px; 
+    font-size: medium;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"] {
+    height: 5vh;
+    min-width: 45vw;
+    background-color: white;
+    border: 0px;
+    color: black;
+    border: black solid 2px;
+    font-size: 1.2em;
+    margin-left: 2.4vw;
+}
+.listAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+ .list1 {
+    height: 5vh;
+    min-width: 30vw;
+    width: fit-content;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4vh;
+    margin-right: 1em;    
+    flex-direction: row;
+    align-items: center;
+    border: black solid 2px;
+    padding: 2px;
+
+    /* margin-right: 1em; */
+    background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.removeButton {
+    height: 5.5vh;
+    border: black solid 2px;
+    border-radius: 2px;
+    padding:2px;
+    background-color:red;
+    font-size: medium;
+    /* margin-top: 15px; */
 }
